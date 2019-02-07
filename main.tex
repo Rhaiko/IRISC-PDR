@@ -139,25 +139,26 @@
 	Motors			& 3 x 4.2	& 100 & 50.4	\\\hline
 	Heating system 	& 10		& 20  & 8		\\\hline\hline
 	
-	Subtotal 		& & 			  & 99.4 Wh \\\hline\hline
+	\textbf{Subtotal:}& & 			  & 99.4 Wh \\\hline\hline
 	
-	Standby E (6h) 	& & 			  & 40 Wh	\\\hline\hline
+	Standby P (6h) 	& & 			  & 40 Wh	\\\hline\hline
 	
-	Total			& & 			  & 139.4 Wh\\\hline
+	\textbf{Total:} & & 			  & 139.4 Wh\\\hline
 	\end{tabular}
 \end{frame}
 
 \begin{frame}[c]{Onboard Storage}
 \centering
-\begin{tabular}{| l | l | l | l |}
+\hspace*{-.5cm}
+\begin{tabular}{| l | l | l | l | l |}
 	\hline
-	\textbf{Item} & \textbf{File size} & \textbf{Sample rate} & \textbf{Total storage (4h)} \\\hline\hline
+	\textbf{Item} & \textbf{File size} & \textbf{Compressed file size} & \textbf{Sample rate} & \textbf{Total storage (3h)} \\\hline\hline
 	
-	NIR camera		& \,MB & 60\,sec 	& \,GB \\\hline
-	Guiding camera	& \,MB & 15\,sec	& \,GB \\\hline
-	Sanity camera	& \,MB & On request & - \\\hline
-	Sensors			& \,B  & 0.1-1\,sec & \,MB \\\hline\hline
-	\textbf{Total:} &	   &			& \,GB \\\hline
+	NIR camera		& 30\,MB  & 18\,MB & 60\,sec 	 & 5.5\,GB \\\hline
+	Guiding camera	& 3.5\,MB & 2\,MB  & 15\,sec	 & 2.5\,GB \\\hline
+	Sanity camera	& 8\,MB   & 5\,MB  & On request  & - \\\hline
+	Sensors			& 75\,B   & -      & 0.1-1\,sec  & 8.1-0.81\,MB \\\hline\hline
+	\textbf{Total:} &	   	  &	       &	         & 8\,GB \\\hline
 	
 
 \end{tabular}
@@ -165,15 +166,16 @@
 
 \begin{frame}[c]{Downlink Bandwidth}
 \centering
+\hspace*{-.3cm}
 \begin{tabular}{| l | l | l | l |}
 	\hline
 	\textbf{Item} & \textbf{File size} & \textbf{Downlink rate} & \textbf{Datarate} \\\hline\hline
 	
-	NIR camera (2x10 pics) & 18 MB & 60\,sec & \,Mbits/sec \\\hline
-	Guiding camera	& 2\,MB	 & 60\,sec	& 0.27\,Mbits/sec \\\hline
-	Sanity camera	& 7\,MB  & On request & - \\\hline
-	Sensors			& 30\,B  & 1\,sec 	& 240\,bits/sec \\\hline\hline
-	\textbf{Total:} &		 & 			& ...\,Mbits/sec \\\hline
+	NIR camera (20 pictures ) & 18\,MB & 60\,sec & 0.55\,Mbits/sec (over 90 min) \\\hline
+	Guiding camera		   & 2\,MB	& 60\,sec	& 0.28\,Mbits/sec \\\hline
+	Sanity camera		   & 5\,MB  & On request& - \\\hline
+	Sensors				   & 30\,B  & 1\,sec 	& 240\,bits/sec \\\hline\hline
+	\textbf{Total:} 	   &		& 			& 0.83\,Mbits/sec \\\hline
 	
 
 \end{tabular}
