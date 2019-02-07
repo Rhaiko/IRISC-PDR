@@ -134,10 +134,5 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
-<<<<<<< HEAD
 
-*.pdf
-=======
-
-*.pdf
->>>>>>> 9c580250d95b5ad452bbc8e20bce87b4553105de
+main.pdf
