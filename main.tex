@@ -77,38 +77,75 @@
 %----------------------------------------------------------------------------------------
 \section{System}
 \subsection{Construction}	 	% DIEGO
+
+\begin{frame}{Construction}
+\begin{columns}
+	\begin{column}{0.6\textwidth}
+%		\hspace{1cm}
+		\begin{tabular}{l|r|r}
+		Color & Component & Mass \\ \hline
+		Yellow & Telescope & 3.66 \, kg \\ 
+		Red & NIR Camera & 120 \, g \\ 
+		Purple & Gimbal & $<$ 5\, kg\\
+		Green & Guiding Camera & $<$ 150 \,g \\
+		Blue & Electronics box  & $<$ 2 \,kg
+	\end{tabular}
+	\end{column}
+	\begin{column}{0.4\textwidth}
+	\begin{figure}
+	\hspace{-3cm}
+	\centering
+	\includegraphics[scale=0.8]{figures/CAD/Outside_Gondola/Experiment.png}
+	\end{figure}
+	\end{column}
+\end{columns}
+\end{frame}
 \begin{frame}{Construction}
 \vspace{-2cm}
 \begin{columns}[t]
-	\begin{column}{0.3\textwidth}
+	\begin{column}{0.4\textwidth}
 		\begin{figure}
-		\centering
-		\includegraphics[scale=0.6]{figures/CAD/Assembly_1.png}
+		\centering		\includegraphics[scale=0.9]{figures/CAD/Inside_Gondola/Iso1.png}
 		\end{figure}
 	\end{column}
-	\begin{column}{0.3\textwidth}
+	
+	\begin{column}{0.4\textwidth}
 		\begin{figure}
 		\centering
-		\includegraphics[scale=0.6]{figures/CAD/Assembly_2.png}
-		\end{figure}
-	\end{column}
-	\begin{column}{0.3\textwidth}
-		\begin{figure}
-		\centering
-		\includegraphics[scale=0.6]{figures/CAD/Assembly_3.png}
+		\vspace{0.5cm}
+	\includegraphics[scale=0.9]{figures/CAD/Inside_Gondola/Vertical_lim.png}
 		\end{figure}
 	\end{column}
 \end{columns}
 %Updated CAD design with the correct location and size. Would be a huge plus if it can rotate a bit.
 \end{frame}
 
+\begin{frame}{Contruction}
+\vspace{-1cm}
+\begin{columns}[t]
+	\begin{column}{0.4\textwidth}
+		\begin{figure}
+		\centering		\includegraphics[scale=0.9]{figures/CAD/Outside_Gondola/Iso2.png}
+		\end{figure}
+	\end{column}
+	
+	\begin{column}{0.4\textwidth}
+		\begin{figure}
+		\centering
+%		\vspace{-1cm}
+	\includegraphics[scale=1.3]{figures/CAD/Outside_Gondola/Vertical_lim.png}
+		\end{figure}
+	\end{column}
+\end{columns}
+\end{frame}
+
 \subsection{Thermal} 			% DIEGO
 \begin{frame}{Thermal}
 \begin{itemize}
-	\item Additional baffle not needed since a newtonian Telescope will be used
-	\item FEA will be used to determine cooling or heatin requirements of the electronic components
+	\item Telescope structure will act as a baffle
+	\item FEA will be used to determine cooling or heating requirements for electronic components
 	\item Heating pads will be used to prevent the motors from freezing
-	\item cooling will be provided for the NIR camera to ensure good performance
+	\item NIR camera will be cooled to ensure performance
 \end{itemize}
 
 \end{frame}
