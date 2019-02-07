@@ -147,34 +147,36 @@
 	\end{tabular}
 \end{frame}
 
-\begin{frame}[c]{Bandwidth}
+\begin{frame}[c]{Onboard Storage}
 \centering
 \begin{tabular}{| l | l | l | l |}
 	\hline
-	\textbf{Item} & \textbf{File size*} & \textbf{Downlink rate} & \textbf{Datarate} \\\hline\hline
+	\textbf{Item} & \textbf{File size} & \textbf{Sample rate} & \textbf{Total storage (4h)} \\\hline\hline
 	
-	NIR camera		& 18 MB & 60 sec 	& 2.4 Mbits/sec** \\\hline
-	Guiding camera	& 2 MB	& 60 sec***	& 0.27 Mbits/sec \\\hline
-	Sanity camera	& 7 MB  & On request & - \\\hline
-	Sensors****		& 30 B  & 1 sec 	& 240 bits/sec \\\hline
+	NIR camera		& \,MB & 60\,sec 	& \,GB \\\hline
+	Guiding camera	& \,MB & 15\,sec	& \,GB \\\hline
+	Sanity camera	& \,MB & On request & - \\\hline
+	Sensors			& \,B  & 0.1-1\,sec & \,MB \\\hline\hline
+	\textbf{Total:} &	   &			& \,GB \\\hline
 	
 
 \end{tabular}
-\newline
+\end{frame}
 
-\begin{columns}[t]
-\begin{column}{0.1\textwidth}
-\end{column}
-\begin{column}{0.9\textwidth}
-\begin{enumerate}
-	\small
-	\item[*] File sizes reflect lossless compressing
-	\item[**] Not planned to send all pictures down, thus will be reduced
-	\item[***] Onboard save time is 15 sec
-	\item[****] GPS; Compass; Gyroscope; Encoders; NIR temp sensor
-\end{enumerate}
-\end{column}
-\end{columns}
+\begin{frame}[c]{Downlink Bandwidth}
+\centering
+\begin{tabular}{| l | l | l | l |}
+	\hline
+	\textbf{Item} & \textbf{File size} & \textbf{Downlink rate} & \textbf{Datarate} \\\hline\hline
+	
+	NIR camera (2x10 pics) & 18 MB & 60\,sec & \,Mbits/sec \\\hline
+	Guiding camera	& 2\,MB	 & 60\,sec	& 0.27\,Mbits/sec \\\hline
+	Sanity camera	& 7\,MB  & On request & - \\\hline
+	Sensors			& 30\,B  & 1\,sec 	& 240\,bits/sec \\\hline\hline
+	\textbf{Total:} &		 & 			& ...\,Mbits/sec \\\hline
+	
+
+\end{tabular}
 \end{frame}
 
 \subsection{Ground Station} 	% NIKLAS
@@ -325,7 +327,7 @@ Minor objectives of the control system:
 \end{figure}
 \end{frame}
 
-\subsection{Expected Results}
+\subsection{Signal to Noise Ratio}
 \begin{frame}{Signal to Noise Ratio}
 \begin{figure}[!htb]
     \hspace{-2cm}
