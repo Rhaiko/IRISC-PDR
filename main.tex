@@ -208,13 +208,30 @@
 \subsection{Control System} 	% ANJA
 \begin{frame}[t]{Control system}
 \begin{itemize}
-	\item<1-> Stabilisation of the gimbal: dynamic control system (e.\,g.~PID) \\
-		Sensor data: gyroscopes, accelerometer\\
-		Includes mechanical model of gimbal, motors
-	\item<2-> Selection and tracking of targets: \\
-		Sensor data: magnetometer, GPS, gyroscopes, encoders \\
-		Includes model of movements of astronomical targets
-	\item<3-> Feedback loop, measured states: utilisation of a Kalman filter to determine exact position \& orientation
+	\item<1-> Stabilisation of the gimbal: dynamic control system (e.\,g.~PID) %\\
+	\begin{itemize}
+		\item Mechanical model of the gimbal, motors model
+		\item Sensor data: gyroscopes, accelerometer%\\
+	\end{itemize}
+%		Sensor data: gyroscopes, accelerometer%\\
+%		Includes mechanical model of gimbal, motors
+	\item<2-> Selection of targets: %\\
+	\begin{itemize}
+		\item Based on prioritisation parameters (e.\,g. brightness, location)
+		\item Sensor data: magnetometer, GPS, gyroscopes, encoders %\\
+	\end{itemize}
+%		Sensor data: magnetometer, GPS, gyroscopes, encoders %\\
+%		Includes model of movements of astronomical targets
+	\item<3-> Tracking of targets: 
+	\begin{itemize}
+		\item Model of movements of astronomical targets
+		\item Sensor data: gyroscopes, encoders
+	\end{itemize}
+	\item<4-> Feedback loop, measured states: 
+	\begin{itemize}
+		\item Kalman filter determines exact position \& orientation
+	\end{itemize}
+	%utilisation of a Kalman filter to determine exact position \& orientation
 \end{itemize}
 
 \end{frame}
@@ -230,16 +247,22 @@ Minor objectives of the control system:
 \end{frame}
 
 \subsection{Cameras} 			% ANJA
-\begin{frame}{NIR Camera}
+\begin{frame}{NIR Camera for the telescope}
+\vspace{-0.2cm}
 \begin{columns}[t]
 \begin{column}{0.6\textwidth}
 	\begin{itemize}
 		\item CMOS Sensor: ZWO ASI183MM (mono-colour) \\
 			resolution: 20.18\,MP, sensor size: 13.2x8.8\,mm
 		\item NIR-conversion with 720\,nm NIR filter
-		\item Sensitivity: 720\,nm to 1150\,nm
+		%\item Sensitivity: 720\,nm to 1150\,nm
 		\item Rolling shutter: no mechanical shutter, no moving parts
 	\end{itemize}
+	\vspace{-0.7cm}
+	\begin{figure}
+	\centering
+	\includegraphics[width = 1.1\linewidth]{figures/images/IRISC_spectrum.eps}
+\end{figure}
 \end{column}
 \begin{column}{0.4\textwidth}
 	\begin{figure}[t]
@@ -259,8 +282,9 @@ Minor objectives of the control system:
 	\item For verification of the field of view (7.5\,deg)
 	\item Support of ground-based re-calibration of sensors (e.\,g.~magnetometer, gyroscopes)
 	\item Imaging sensor with a high sensitivity, resulting in shorter exposure times (compared to NIR camera)
-	\item Imaging in visible wavelengths
+	\item Imaging in visible wavelengths and NIR
 \end{itemize}
+
 \end{column}
 \begin{column}{0.4\textwidth}
 	\begin{figure}[t]
