@@ -11,6 +11,7 @@
 \usepackage[export]{adjustbox}
 %\usepackage[shortlabels]{enumitem}
 \usepackage[font=scriptsize,justification=centering]{caption}
+\usepackage{movie15}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE INFORMATION.
@@ -173,14 +174,14 @@
 	Guiding camera 	& 1.5 		& 100 & 6		\\\hline
 	Controller 		& 6.25 		& 100 & 25		\\\hline
 	Sensors 		& 1			& 100 & 4		\\\hline
-	Motors			& 3 x 4.2	& 100 & 50.4	\\\hline
+	Motors			& 3 x 4.2	& 100 & 50		\\\hline
 	Heating system 	& 10		& 20  & 8		\\\hline\hline
 	
-	\textbf{Subtotal:}& & 			  & 99.4 Wh \\\hline\hline
+	\textbf{Subtotal:}& & 			  & 100 Wh  \\\hline\hline
 	
 	Standby P (6h) 	& & 			  & 40 Wh	\\\hline\hline
 	
-	\textbf{Total:} & & 			  & 139.4 Wh\\\hline
+	\textbf{Total:} & & 			  & 140 Wh	\\\hline
 	\end{tabular}
 \end{frame}
 
@@ -194,7 +195,7 @@
 	NIR camera		& 30\,MB  & 18\,MB & 60\,sec 	 & 5.5\,GB \\\hline
 	Guiding camera	& 3.5\,MB & 2\,MB  & 15\,sec	 & 2.5\,GB \\\hline
 	Sanity camera	& 8\,MB   & 5\,MB  & On request  & - \\\hline
-	Sensors			& 75\,B   & -      & 0.1-1\,sec  & 8.1-0.81\,MB \\\hline\hline
+	Sensors			& 75\,B   & -      & 0.1-1\,sec  & 8-0.8\,MB \\\hline\hline
 	\textbf{Total:} &	   	  &	       &	         & 8\,GB \\\hline
 	
 
@@ -208,11 +209,11 @@
 	\hline
 	\textbf{Item} & \textbf{File size} & \textbf{Downlink rate} & \textbf{Datarate} \\\hline\hline
 	
-	NIR camera (20 pictures ) & 18\,MB & 60\,sec & 0.55\,Mbits/sec (over 90 min) \\\hline
-	Guiding camera		   & 2\,MB	& 60\,sec	& 0.28\,Mbits/sec \\\hline
+	NIR camera (20 pictures ) & 18\,MB & 60\,sec & 0.6\,Mbits/sec (over 90 min) \\\hline
+	Guiding camera		   & 2\,MB	& 60\,sec	& 0.3\,Mbits/sec \\\hline
 	Sanity camera		   & 5\,MB  & On request& - \\\hline
 	Sensors				   & 30\,B  & 1\,sec 	& 240\,bits/sec \\\hline\hline
-	\textbf{Total:} 	   &		& 			& 0.83\,Mbits/sec \\\hline
+	\textbf{Total:} 	   &		& 			& 0.9\,Mbits/sec \\\hline
 	
 
 \end{tabular}
@@ -466,6 +467,7 @@ Minor objectives of the control system:
 % global & zoomin
 \end{frame}}
 
+{\setbeamertemplate{logo}{}
 \subsection{Outreach} 			% NIKLAS
 \begin{frame}{Outreach}
 \begin{figure}[!htb]
@@ -485,7 +487,7 @@ Minor objectives of the control system:
         \includegraphics[width=0.9\linewidth]{figures/images/website.png}
     \end{minipage}%
 \end{figure}
-\end{frame}
+\end{frame}}
 
 
 %----------------------------------------------------------------------------------------
@@ -675,6 +677,13 @@ Bubble Nebula         & NGC 7635    & 23.33 & 61.20  & 10   & 15    & 8     \\ \
 \end{tabular}
 \end{table}
 \end{frame}
+
+{\nologo
+\begin{frame}[c]{Rotation}
+\centering
+\vspace{-.1cm}
+\includemovie[autoplay,repeat]{12cm}{6.3cm}{figures/targets/Andromeda_movement.mov}
+\end{frame}}
 
 %------------Budget - Niklas-------------%
 
